@@ -1,0 +1,18 @@
+{
+    "name": "autenticacion-prueba",
+    "version": "1.0.0",
+    "license": "MIT",
+    "scripts": {
+        "dev": "ts-node ./src/api.ts",
+        "sync": "ts-node ./src/database/sync.ts",
+        "build": "tsc ./src/api.ts",
+        "start": "yarn build && node .src/api.js"
+    },
+    "dependencies": {
+        "express": "^4.17.2",
+        "jsonwebtoken": "^8.5.1",
+        "pg": "^8.7.1",
+        "pg-hstore": "^2.3.4",
+        "sequelize": "^6.12.5"
+    }
+}
